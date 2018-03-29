@@ -1,0 +1,258 @@
+
+body{
+	width:800px;
+	margin:0 auto;
+	padding: 0;
+	border-left: 8px solid black;
+	border-right: 8px solid black;
+	}
+header{
+		width:800px;
+		height:150px;
+	margin:0 auto;
+	padding: 0;
+}
+header h1{
+	text-align:center;
+	font-family: 'Libre Barcode 39 Text', cursive, verdana;
+	font-size:9em;
+}
+nav{
+	position: sticky;
+	top: 0;
+	z-index: 3;
+	padding:0;
+	margin:0 auto;
+	border-top:2px solid gray;
+	border-bottom:2px solid gray;
+	background-color:black;
+	color: white;
+	width:100%;
+}
+nav ul{  
+	text-align: center;
+	margin:0 auto;
+	height: 30px;  
+	font-family: 'Ubuntu', sans-serif; 
+}
+nav ul li{
+	list-style-type: none;
+	display:inline-block; 
+	font-size: .96em;
+	text-transform: uppercase; 
+	height: 30px; 
+	width:70px;
+}
+nav ul a{ 
+	cursor: pointer;
+    margin:0px; 
+    line-height: 30px;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    text-transform: uppercase;
+    color:#FFF;
+}
+nav ul a img{ 
+	list-style-type: none;
+	display:inline;  
+	font-size: .96em;
+	color:white;
+	text-transform: uppercase; 
+	text-decoration: none;
+	height: 30px; 
+}
+nav ul a:hover{
+	background-color:gray;  
+}
+nav .searchbar{ 
+	padding: 0; 
+	float: right;
+}
+	  
+input[type=text] {
+	width: 130px;
+	box-sizing: border-box; 
+	font-size: 16px; 
+	background-image: url('searchbtn.png');
+	background-position: 0px 0px; 
+	background-repeat: no-repeat;
+	background-size: 8px 8px;
+	padding: 7px 20px 3px 40px;
+	-webkit-transition: width 0.4s ease-in-out;
+	transition: width 0.6s ease-in-out;    text-rendering: auto;
+	color: initial;
+	letter-spacing: normal;
+	word-spacing: normal;
+	text-transform: none;
+	text-indent: 0px;
+	text-shadow: none;
+	display: inline-block;
+	text-align: start;
+	margin: 0em;
+	font: 400 13.3333px Arial;
+}
+
+input[type=text]:focus {
+	width: 100%;
+	margin: 0em;
+}	
+
+/*start css slider*/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600);	
+#slider {
+  position: relative;
+  overflow: hidden;
+  margin: 20px auto 0 auto;
+  border-radius: 4px;
+}
+
+#slider ul {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 200px;
+  list-style: none;
+}
+
+#slider ul li {
+  position: relative;
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 500px;
+  height: 300px;
+  background: #ccc;
+  text-align: center;
+  line-height: 300px;
+}
+
+a.control_prev, a.control_next {
+  position: absolute;
+  top: 40%;
+  z-index: 999;
+  display: block;
+  padding: 4% 3%;
+  width: auto;
+  height: auto;
+  background: #2a2a2a;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+a.control_prev:hover, a.control_next:hover {
+  opacity: 1;
+  -webkit-transition: all 0.2s ease;
+}
+
+a.control_prev {
+  border-radius: 0 2px 2px 0;
+}
+
+a.control_next {
+  right: 0;
+  border-radius: 2px 0 0 2px;
+}
+ 
+/*end slider*/
+/*start elementspart1*/
+.elementspart1{
+width:700;
+margin:0 auto;
+padding:0; 
+}
+.elementspart1 .elt{
+	width:221px;
+	height:240px;
+	margin: 4px;
+	border: 0.1rem solid black;
+	border-bottom: #79b946 1px dotted;
+	background-color: #f05151;
+	float: left;
+	} 
+/*elements part 2*/
+.elementspart2{
+	width:700;
+margin:10px auto;
+padding:0;  
+	clear: both;
+}
+.elementspart2 .elt{
+	width:700px;
+	height:200px;
+	border: 1px solid black;
+	border-bottom: #79b946 1px dotted; 
+	margin:20px 0 10px 0;
+	}
+	
+/*elements part 3*/
+	.elementspart3{
+		width:700;
+	margin:10px auto;
+	padding:0;  
+		clear: both;
+	}
+	.elementspart3 .elt{
+		width:200px;
+		height:200px;
+		border: 1px solid black;
+		border-radius: 100px;
+		border-bottom: #79b946 1px dotted; 
+		margin:14px;
+		float: left; 	
+		}
+	.animatedhover:hover{
+		animation-duration: 1s;
+		animation-fill-mode: both;
+		animation-name:Rotation;
+	}
+	@keyframes Rotation {
+		from {
+		  transform-origin: center;
+		  transform: rotate3d(0, 0, 1, -200deg);
+		  opacity: 0.1;
+		}
+	  
+		to {
+		  transform-origin: center;
+		  transform: translate3d(0, 0, 0);
+		  opacity: 1;
+		}
+	  }
+	  
+	/*Gradient animation
+	* A PEN BY Manuel Pinto https://codepen.io/P1N2O/pen/pyBNzX
+	*/
+	.animbg{ 
+	background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+	animation: Gradient 15s ease infinite;
+	}
+	  @keyframes Gradient {
+		0% {
+			background-position: 0% 50%
+		}
+		50% {
+			background-position: 100% 50%
+		}
+		100% {
+			background-position: 0% 50%
+		}
+	}
+	footer{
+		clear: both;
+		width:100%; 
+		padding:12px auto!important;
+		border-top: 1px solid brown;
+	}
+	footer .copyrights{
+		margin:3px auto;
+		text-align: center;
+	}
